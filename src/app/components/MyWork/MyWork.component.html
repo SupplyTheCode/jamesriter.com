@@ -1,0 +1,24 @@
+<section class="cf w-100 wrap pt5 cf pa2 PortfolioItemWrap">
+    <div>
+        <h2 class="f1 mb2">{{MyWorkTitle}}</h2>
+        <p class="lh-copy f4 dark-gray">
+            {{MyWorkDesc}}
+        </p>
+    </div>
+    <div class="flex flex-wrap justify-center items-center">
+      <article class="w-50 w-50-ns w-25-l pa2" *ngFor="let MyWorkLists of MyWorkList">
+          <a href="{{MyWorkLists.url}}" class="grow db link dim tc PortfolioItem" target="_blank" title="Built with ❤️ and {{MyWorkLists.desc}}">
+              <picture class="w-100 db outline black-10 PortfolioItemImage" >
+                <source srcset="{{MyWorkLists.img}}" type="image/webp">
+                <img src="{{MyWorkLists.imgJpg}}" alt="{{MyWorkLists.name}}" class="PortfolioItemImage">
+              </picture>
+              <dl class="mt2 f6 lh-copy">
+                  <dt class="clip">Site Name</dt>
+                  <dd class="ml0 black truncate w-100">{{MyWorkLists.name}}</dd>
+                  <dt class="clip">Built With</dt>
+                  <dd class="ml0 gray truncate w-100">{{MyWorkLists.desc}}</dd>
+              </dl>
+          </a>
+      </article>      
+    </div>
+</section>

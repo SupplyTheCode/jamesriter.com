@@ -1,0 +1,48 @@
+<article class="ContactForm">
+  <div class="w-100">
+    <div class="w-100">
+      <h2 class="tc w-100 f1 mb0">
+        {{ContactFormTitle}}
+      </h2>
+      <div class="tc w-100 mb5-ns mt2">
+        {{ContactFormSub}}
+      </div>
+    </div>
+    <div class="flex justify-center mb5 mb0-ns mt5 mt0-ns">
+      <div class="w-50 tc pt2 pb0" *ngFor="let ContactFormLists of ContactFormList">
+          <div>
+            <svg [ngClass]="'w2 h2 ' + ContactFormLists.img" title="James Riter {{ContactFormLists.name}}}" >
+                <use [attr.xlink:href]="'#' + ContactFormLists.img"></use>
+            </svg>               
+          </div>
+          <h4 class="mb0 mt2">{{ContactFormLists.name}}</h4>
+          <div class="silver mt1"> 
+            {{ContactFormLists.desc}}
+          </div>
+      </div>
+    </div>    
+  </div>
+  <div class="w-100">
+    <form id="my-form" action="https://formspree.io/xdodqvgv" method="POST" class="TheContactForm wrap flex flex-wrap">
+      <label class="TheContactForm TheContactFormName w-100 w-50-ns">
+        <span>Your Name *</span>
+        <input type="text" name="name" id="name" value="" placeholder="Your Name" required />
+      </label>
+      <label class="TheContactForm TheContactFormEmail w-100 w-50-ns">
+        <span>Your Email *</span>
+        <input type="email" name="email" value="" placeholder="Your Email required" />
+      </label>
+      <label class="TheContactForm w-100 TheContactFormMessage w-100">
+        <span>Message</span>
+        <textarea class="TheContactFormMessageTextarea" placeholder="What would you like to talk about?" required></textarea>
+      </label>
+      <div class="TheContactFormButton tr w-100 pr3">
+        <button id="my-form-button" class="f4 grow no-underline br3 ph3 pv2 mb2 dib white bg-blue">Submit</button>
+      </div>
+    </form>
+    <div class="statusWrap">
+      <span id="my-form-status"></span>
+      <span id="yourName"></span>
+    </div>
+  </div>
+</article>

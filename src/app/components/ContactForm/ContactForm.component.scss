@@ -1,0 +1,51 @@
+.ContactForm {
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+}
+
+form.TheContactForm {
+  width: 100%;
+}
+
+.TheContactForm {
+  span {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  textarea {
+    min-height: 100px;
+  }
+}
+
+label.TheContactForm {
+  margin-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+//
+.statusWrap {
+  font-size: 6vw;
+  text-align: center;
+  width: 100%;
+}

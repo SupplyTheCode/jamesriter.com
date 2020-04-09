@@ -1,0 +1,5 @@
+<a *ngFor="let findmeLink of findmeLinks" class="grow dim h2 w2 mr3" href="{{findmeLink.link}}" target="_blank" title="Find James Riter on {{findmeLink.name}}">
+    <svg [ngClass]="'grow h2 w2 ' + findmeLink.img">
+        <use [attr.xlink:href]="'#' + findmeLink.img"></use>
+    </svg>                    
+</a>

@@ -1,0 +1,70 @@
+// NavHeaderDown
+.NavHeader {
+  transition: ease-in-out all 333ms;
+  background: black;
+  color: white;
+  z-index: 50;
+
+  &.NavHeaderDown {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 6px #8f908f;
+  }
+}
+
+#NavHeaderSVG {
+  transition: ease-in-out all 333ms;
+  fill: white;
+  &.NavHeaderSVGDown {
+    fill: black;
+  }
+}
+
+//
+@media (min-width: 480px) {
+  .menu-link {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) {
+  .menu-trigger {
+    display: none;
+  }
+}
+.hide {
+  display: none;
+}
+.menu {
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100vw);
+  transition: all 600ms ease;
+  z-index: 100;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+.slideIn {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  @media (min-width: 480px) {
+    display: none;
+  }
+}

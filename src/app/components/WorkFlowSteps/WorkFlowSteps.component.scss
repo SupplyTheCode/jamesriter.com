@@ -1,0 +1,57 @@
+
+.StandOutItem {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 5px;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+}
+.StandOutItemWrap{
+  @media (max-width: 480px) {
+    padding: 0 !important;
+  }
+}
+
+.StandOut > div{
+    position: relative;
+}
+
+.StandOut > div:after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  bottom: 0;
+  height: 50%;
+  width: 1px;
+  z-index: 5;
+  background: #1f385a;
+  display: block;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.StandOut > div:first-of-type:after{
+   background: transparent;
+}
+
+.StandOutItem h4 {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.StandOutItem p {
+  text-align: center;
+  color: #929292;
+}
+
+.StandOut{
+  @media (max-width: 480px) {
+    display: block !important;
+  }
+}

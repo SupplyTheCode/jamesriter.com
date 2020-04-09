@@ -1,0 +1,28 @@
+<div class="MyServices flex justify-center items-center wrap">
+    <div class="w-100">
+        <h2 class="tc f2">
+            <span class="fw1">My</span> <b class="fw9"> Services</b>
+        </h2>
+        <div class="flex flex-wrap w-100 tc">
+            <div class="w-100 w-33-ns pa2" *ngFor="let MyServicesLists of MyServicesList">
+                <div class="pa1 MyServicesItem br2">
+                    <div>
+                        <svg [ngClass]="'MyServicesImage ' + MyServicesLists.img" title="James Riter {{MyServicesLists.name}}" >
+                            <use [attr.xlink:href]="'#' + MyServicesLists.img"></use>
+                        </svg>                            
+                    </div>
+                    <h2 class="mb1">{{MyServicesLists.name}}</h2>
+                    <hr class="w-50 center">
+                    <p class="MyServicesItemContent mt1">
+                        {{MyServicesLists.desc}}
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <div class="tc center mb5 mt5 f4">
+            <p class="w-75-ns w-100 center ">
+                {{MyServicesSubText}}
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<section class="fixed top-0 right-0 left-0 pv3 NavHeader" id="NavHeader">
+  <div class="flex justify-between items-center wrap">
+    <a class="color-inherit link fw9 f3" routerLink="/">James Riter</a>
+    <div class="main-nav">
+      <nav class="dn db-ns">
+        <MainNavList></MainNavList>
+      </nav>
+      <span class="menu-trigger">
+        <span (click)="shouldShow = !shouldShow" class="color-inherit pointer">
+          <svg viewBox="0 0 100 80" width="40" height="40" class="" id="NavHeaderSVG">
+            <rect width="90" height="10" fill="inherit"></rect>
+            <rect y="30" width="90" height="10" fill="inherit"></rect>
+            <rect y="60" width="90" height="10" fill="inherit"></rect>
+          </svg>
+        </span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<aside class="menu" [ngClass]="{slideOut: shouldShow, slideIn: !shouldShow}">
+  <div class="menu-inner">
+    <nav class="menu-pages list pl0 flex flex-column">
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Home">Home</a>
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#About">About</a>
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#WorkFlow">Work Flow</a>
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Services">Services</a>
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Portfolio">Portfolio</a>
+      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Contact">Contact</a>
+    </nav>
+  </div>
+</aside>
+
+<div class="overlay pointer" [ngClass]="{hide: shouldShow, show: !shouldShow}" (click)="shouldShow = !shouldShow"></div>
