@@ -1,6 +1,6 @@
-# Basic Angular Site
+# JamesRiter.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Welcome to my site - More information coming soon
 
 # TO START
 
@@ -25,6 +25,7 @@ ng build --aot
 ng build --buildOptimizer
 ng build --aot --buildOptimizer
 ng build --aot --prod --buildOptimizer
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
@@ -36,32 +37,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-https://codepen.io/SquishyAndroid/pen/XjRPVV
-
-<!--  -->
-
-http://theme.srbthemes.com/kerri/
-http://theme.srbthemes.com/kerri/light/index_1.html#
-
-<!--  -->
-
-https://www.rishabhsoft.com/front-end-development-services
-
-https://www.thinksys.com/services/software-development/web-front-end-development/
-
-https://www.romexsoft.com/front-end-development/
-
-https://miromind.com/services/front-end-development
-
-https://www.npgroup.net/services/development/front-end-development/
-
-https://frontenddevelopers.org/
-
-https://marinaaisa.com/
-
-https://medium.com/walaazahran/list-of-very-important-websites-you-should-know-as-front-end-developer-a1ec2cd4394
-
-https://ianlunn.co.uk/
-
-https://702pros.com/
