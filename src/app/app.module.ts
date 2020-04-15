@@ -22,6 +22,7 @@ import { ContactForm } from "./components/ContactForm/ContactForm.component";
 import { FindMELinks } from "./components/FindMELinks/FindMELinks.component";
 import { WorkFlowSteps } from "./components/WorkFlowSteps/WorkFlowSteps.component";
 import { svgSprite } from "./components/svgSprite/svgSprite.component";
+import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { svgSprite } from "./components/svgSprite/svgSprite.component";
     WorkFlowSteps,
     svgSprite,
   ],
-  imports: [BrowserModule, appRoutingModule, HttpClientModule],
+  imports: [BrowserModule, appRoutingModule, HttpClientModule, ScrollToModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
