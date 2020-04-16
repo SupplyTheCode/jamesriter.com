@@ -1,11 +1,20 @@
+@import url("https://rsms.me/inter/inter.css");
+
 html,
 body {
   height: 100%;
   // scroll-behavior: smooth;
+  background-color: $white;
 }
 body {
   margin: 0;
   font-family: "Varela Round", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 * {
   box-sizing: border-box;

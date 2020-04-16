@@ -5,15 +5,11 @@
     position: absolute;
     top: 1px;
     left: 0px;
-    bottom: 0;
     overflow: hidden;
-    line-height: inherit;
-    padding: inherit;
     max-width: 0;
     color: #357edd;
     content: attr(data-hover);
     transition: max-width 0.5s;
-    display: inline-block;
     padding: inherit;
     padding-right: 0;
     white-space: nowrap;

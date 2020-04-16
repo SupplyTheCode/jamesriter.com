@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "AboutME",
   templateUrl: "./AboutME.component.html",
-  styleUrls: ["AboutME.component.scss"]
+  styleUrls: ["AboutME.component.scss"],
 })
 export class AboutME {
   aboutTitle = "About Me";
