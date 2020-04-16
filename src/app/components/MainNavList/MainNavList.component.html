@@ -1,4 +1,4 @@
 <a *ngFor="let NavItem of NavItems" [ngx-scroll-to]="NavItem.url" [ngx-scroll-to-offset]="OffSet"
-    class="{{NavItem.class}} " title="{{NavItem.title}}">
+    class="{{NavItem.class}} link-hover" title="{{NavItem.title}}" [attr.data-hover]="NavItem.name">
     {{NavItem.name}}
 </a>

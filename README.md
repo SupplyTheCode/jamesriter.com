@@ -25,7 +25,7 @@ ng build --aot
 ng build --buildOptimizer
 ng build --aot --buildOptimizer
 ng build --aot --prod --buildOptimizer
-
+ng build --aot --buildOptimizer --output-hashing=all
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
