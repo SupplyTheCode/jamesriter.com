@@ -12,8 +12,10 @@
                 <p class="f3 fw9">{{heroSubInfo}}</p>
             </div>
         </header>
-        <a class="scroll_down" href="#About">
+
+        <a class="scroll_down pointer" [ngx-scroll-to]="'About'" [ngx-scroll-to-offset]="-30"
+            title="About James Riter - Front End Web Master">
             <i class="text-white"></i>
-        </a>        
+        </a>
     </div>
 </section>

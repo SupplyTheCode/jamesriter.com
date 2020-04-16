@@ -21,12 +21,12 @@
 <aside class="menu" [ngClass]="{slideOut: shouldShow, slideIn: !shouldShow}">
   <div class="menu-inner">
     <nav class="menu-pages list pl0 flex flex-column">
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Home">Home</a>
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#About">About</a>
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#WorkFlow">Work Flow</a>
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Services">Services</a>
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Portfolio">Portfolio</a>
-      <a class="b link pv2 ph2 mv3 fw9 black" (click)="shouldShow = !shouldShow" href="#Contact">Contact</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="James Riter" [ngx-scroll-to]="'Home'" [ngx-scroll-to-offset]="-40"> Home</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="About - James Riter" [ngx-scroll-to]="'About'" [ngx-scroll-to-offset]="-40"> About</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="James Riter's Work Flow" [ngx-scroll-to]="'WorkFlow'" [ngx-scroll-to-offset]="-40"> Work Flow</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="James Riter's Services" [ngx-scroll-to]="'Services'" [ngx-scroll-to-offset]="-40"> Services</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="James Riter's Portfolio" [ngx-scroll-to]="'Portfolio'" [ngx-scroll-to-offset]="-40"> Portfolio</a>
+      <a class="color-inherit link mh1 ph1 pointer pv2" (click)="shouldShow = !shouldShow" title="Contact James Riter" [ngx-scroll-to]="'Contact'" [ngx-scroll-to-offset]="-40"> Contact</a>
     </nav>
   </div>
 </aside>

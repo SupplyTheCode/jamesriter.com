@@ -1,6 +1,4 @@
-<a class="color-inherit link pv2 ph1 mh1" href="#Home">Home</a>
-<a class="color-inherit link pv2 ph1 mh1" href="#About">About</a>
-<a class="color-inherit link pv2 ph1 mh1" href="#WorkFlow">Work Flow</a>
-<a class="color-inherit link pv2 ph1 mh1" href="#Services">Services</a>
-<a class="color-inherit link pv2 ph1 mh1" href="#Portfolio">Portfolio</a>
-<a class="color-inherit link pv2 ph1 mh1" href="#Contact">Contact</a>
+<a *ngFor="let NavItem of NavItems" [ngx-scroll-to]="NavItem.url" [ngx-scroll-to-offset]="OffSet"
+    class="{{NavItem.class}} link-hover" title="{{NavItem.title}}" [attr.data-hover]="NavItem.name">
+    {{NavItem.name}}
+</a>
