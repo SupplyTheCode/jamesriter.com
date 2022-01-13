@@ -6,7 +6,7 @@ Welcome to my site - More information coming soon
 
 Run `npm install`
 Run `ng serve`
-
+serve
 If VS Code is not playing well with the `ng` command try running this `npm link @angular/cli`
 
 ## Development server
